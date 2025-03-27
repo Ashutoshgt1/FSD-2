@@ -1,0 +1,21 @@
+<!-- write a script to define two json objects as division 1 and 2 
+ having an array to store name of students this name should be sorted alphabetically 
+ and should be display in console and also concate this two array in one -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        var division1 = {"name":["A","F","c"]}
+        var division2 = {"name":["B","E","D"]}
+        const div1_data =division1.name;
+        const div2_data =division2.name;
+        var combine_data = div1_data.concat(div2_data).sort();
+        console.log(combine_data)
+    </script>
+ </body>
+ </html>

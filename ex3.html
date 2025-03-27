@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const sub = {"Fsd":[{Topic:"Html",
+                        course:"beginer",
+                        content:["tags","table","form"]
+                        },
+                        {Topic:"css",
+                        course:"beginer",
+                        content:["tags","table","form"]
+                        }
+                        ]
+                }
+    for(x in sub.Fsd){
+        for(y in sub.Fsd[x]){      //for in fechtes index for array but here in will fetch key
+            document.writeln(sub.Fsd[x][y]+"<br>")
+        }
+    }
+    document.writeln("--------For OFF---------<br>")
+    for (x1 of sub.Fsd){
+        document.writeln(x1.Topic+"<br>")
+        document.writeln(x1.course+"<br>")
+        document.writeln(x1.content+"<br>")
+    }
+    </script>
+</body>
+</html>

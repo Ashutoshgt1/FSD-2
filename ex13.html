@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1" style="font-size: 50px;">Hello</p>
+    <button onclick="Inc()">increament</button>
+    <script>
+        font=50;
+        function fun(font){
+            document.getElementById('p1').style.fontSize=font+"px";
+        }
+        function inc(){
+            test = setInterval(() => {if(font<100){fun(++font)}}, 100);
+        }
+    </script>
+</body>
+</html>

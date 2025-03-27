@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=0;
+        var b=50;
+        function fun(){
+            p=document.getElementById("demo")
+            p.innerHTML="Hello"
+            if(a<=50){
+                a+=1
+            }
+            p.style.fontSize=a+"px";
+            p.style.color="blue";
+        }
+        function inc(){
+        setInterval(fun,100);
+        }
+        function fun2(){
+            p=document.getElementById("demo")
+            p.innerHTML="Hello"
+            if(b>5){
+                b-=1
+            }
+            p.style.fontSize=b+"px";
+            p.style.color="blue";
+        }
+        function dec(){
+        setInterval(fun2,100);
+        }
+    </script>
+    <p id="demo">Hello</p>
+    <input type="button" value="increament" onclick="inc()">
+    <input type="button" value="decreamnet" onclick="dec()">
+</body>
+</html>

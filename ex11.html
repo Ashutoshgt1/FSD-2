@@ -1,0 +1,25 @@
+<!-- write a script to initilaize 2 variables and increament both the variables each time 
+ and display the addition of both the variables at interval of 1 second -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        var a=1
+        var b=2
+        function total() {
+            document.write("a = "+a+"<br>")
+            document.write("b = "+b+"<br>")
+            sum=a+b
+            a+=1;
+            b+=1;
+            return sum;
+        }
+        setInterval(() =>{document.write("a+b = "+total()+"<br>")} , 1000);
+    </script>
+ </body>
+ </html>
