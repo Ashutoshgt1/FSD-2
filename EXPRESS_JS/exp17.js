@@ -16,6 +16,7 @@ app.get('/',(req,res,next)=>
 })
 app.get('/',(req,res)=>
 {
+    // here we cannot write res.write() above clearCookie but can write console.log()
     res.clearCookie("lname")
     res.send("cookie deleted")
 }).listen(5000)
