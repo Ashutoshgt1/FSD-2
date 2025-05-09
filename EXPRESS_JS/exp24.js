@@ -4,5 +4,5 @@ app.set("view engine","pug")
 app.set("views",__dirname)
 app.get('/',(req,res)=>
 {
-    res.render('example')
+    res.render(__dirname+'/exp24',{name:'learning',password:'xyz'})
 }).listen(3000)
