@@ -19,6 +19,19 @@ import QB417 from './QB417';
 import QB417_2 from './QB417_2';
 import QB418 from './QB418'
 import Todolist from './Todolist';
+import K1 from './k1'
+import K2 from './k2'
+import K3 from './k3'
+import K4 from './k4'
+import K5 from './p'
+import K6 from './Example1'
+import K7 from './Example2'
+import K8 from './Example3'
+import K9 from './Example4'
+import K10 from './Axios'
+
+import Example1 from './Example1';
+
 
 
 function App() {
@@ -52,6 +65,23 @@ function App() {
 <QB417_2/><br></br>
 <QB418/><br></br>
 <Todolist/><br></br>
+<K1/>
+<br></br>
+<K2/>
+<K3/>
+<K4/>
+<br></br>
+<K5/>
+<br></br>
+<K6/>
+<br></br>
+<K7/>
+<br></br>
+<K8/>
+<K9/>
+<K10/>
+
+``
       </div>
    </>
   );
